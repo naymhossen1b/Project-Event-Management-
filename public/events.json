@@ -1,0 +1,110 @@
+[
+      {
+        "id": 1,
+        "category": "Music Concert",
+        "relevant_name": "Rock Fest 2023",
+        "image": "https://i.ibb.co/1MN6Z6D/Alan-Walker.jpg",
+        "price": "$50.00",
+        "short_description": "Experience the ultimate rock concert!",
+        "text_colour": "#FFFFFF",
+        "color": "#FF5733",
+        "button_bg_color": "#000000",
+        "card_bg_color": "#222222"
+      },
+      {
+        "id": 2,
+        "category": "Comedy Show",
+        "relevant_name": "Laugh Riot",
+        "image": "https://i.ibb.co/jgp8NyT/fb52cbc7-0db2-4229-8d64-66f85400e32f-1087471-RETINA-PORTRAIT-3-2.jpg",
+        "price": "$25.00",
+        "short_description": "Get ready for a night of laughter!",
+        "text_colour": "#000000",
+        "color": "#FFD700",
+        "button_bg_color": "#4CAF50",
+        "card_bg_color": "#F0E68C"
+      },
+      {
+        "id": 3,
+        "category": "Movie Premiere",
+        "relevant_name": "Blockbuster Premiere",
+        "image": "https://i.ibb.co/fqbtSRW/mop.jpg",
+        "price": "$35.00",
+        "short_description": "Be the first to see the year's biggest film!",
+        "text_colour": "#000000",
+        "color": "#FF4500",
+        "button_bg_color": "#000080",
+        "card_bg_color": "#87CEFA"
+      },
+      {
+        "id": 4,
+        "category": "Sports Event",
+        "relevant_name": "Championship Game",
+        "image": "https://i.ibb.co/Y2sQPYZ/web1-leaguetournament-041716jd-008-10.jpg",
+        "price": "$75.00",
+        "short_description": "Witness the thrilling championship match!",
+        "text_colour": "#FFFFFF",
+        "color": "#008000",
+        "button_bg_color": "#FFD700",
+        "card_bg_color": "#000000"
+      },
+      {
+        "id": 5,
+        "category": "Theater Performance",
+        "relevant_name": "Shakespearean Drama",
+        "image": "https://i.ibb.co/wNkqHMD/a7f60b0edcb850970c6efac617d033e9db099ca2c094726233e240fe445bc9f5-rimg-w960-h720-gmir.jpg",
+        "price": "$40.00",
+        "short_description": "Experience the magic of Shakespeare on stage!",
+        "text_colour": "#000000",
+        "color": "#800000",
+        "button_bg_color": "#FFFF00",
+        "card_bg_color": "#F5DEB3"
+      },
+      {
+        "id": 6,
+        "category": "Art Exhibition",
+        "relevant_name": "Gallery Showcase",
+        "image": "https://i.ibb.co/HPdyMxX/art.jpg",
+        "price": "Free Admission",
+        "short_description": "Explore a world of artistic creativity!",
+        "text_colour": "#000000",
+        "color": "#FF69B4",
+        "button_bg_color": "#4B0082",
+        "card_bg_color": "#F0F8FF"
+      },
+      {
+        "id": 7,
+        "category": "Dance Performance",
+        "relevant_name": "Dance Extravaganza",
+        "image": "https://i.ibb.co/WHz7WwR/Bangkok-Patana-Dance-Extravaganza-34-1024x682.jpg",
+        "price": "$30.00",
+        "short_description": "Witness breathtaking dance performances!",
+        "text_colour": "#FFFFFF",
+        "color": "#FF1493",
+        "button_bg_color": "#800080",
+        "card_bg_color": "#E6E6FA"
+      },
+      {
+        "id": 8,
+        "category": "Food Festival",
+        "relevant_name": "Culinary Delights",
+        "image": "https://i.ibb.co/7GrQHRC/food.jpg",
+        "price": "$20.00",
+        "short_description": "Savor the flavors of the world at one place!",
+        "text_colour": "#000000",
+        "color": "#008080",
+        "button_bg_color": "#FF4500",
+        "card_bg_color": "#FFFACD"
+      },
+      {
+        "id": 9,
+        "category": "Fashion Show",
+        "relevant_name": "Glamour Showcase",
+        "image": "https://i.ibb.co/Vpzx3Sy/fasown.jpg",
+        "price": "$50.00",
+        "short_description": "Witness the latest trends in fashion!",
+        "text_colour": "#FFFFFF",
+        "color": "#800080",
+        "button_bg_color": "#FFD700",
+        "card_bg_color": "#F5F5F5"
+      }
+    ]
