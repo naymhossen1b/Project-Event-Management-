@@ -1,11 +1,11 @@
-
+import Eventcard from "./EventCard/Eventcard";
 
 const Home = () => {
-    return (
-        <div>
-            <h2>its home page</h2>
-        </div>
-    );
+  return <>
+  <div>
+    <Eventcard />
+  </div>
+  </>;
 };
 
 export default Home;
