@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-gray-400 rounded-md">
+      <div className="navbar bg-gray-800 text-white rounded-md">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -75,13 +75,13 @@ const Header = () => {
             {user ? (
               <>
                 <span>{user.auth.name}</span>
-                <button onClick={handleSignOut} className="btn">
+                <button onClick={handleSignOut} className="btn bg-red-500 border-none text-white">
                   Sign Out
                 </button>
               </>
             ) : (
               <Link to="/login">
-                <a className="btn">Login</a>
+                <a className="btn bg-red-500 border-none text-white">Login</a>
               </Link>
             )}
           </div>

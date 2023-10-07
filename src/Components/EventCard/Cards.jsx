@@ -6,7 +6,7 @@ const Cards = ({ card }) => {
 
   return (
     <div>
-      <div className=" bg-gray-100 rounded-xl shadow-md">
+      <div className=" bg-gray-100 rounded-xl shadow-md hover:cursor-pointer hover:animate-pulse">
         <img className="w-full h-52 rounded-t-xl" src={image} alt="" />
 
         <div className="p-5 space-y-2">
