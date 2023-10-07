@@ -17,21 +17,21 @@ const Header = () => {
 
   const navlinks = (
     <>
-      <div className="flex items-center">
+      <div className="flex justify-end">
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/events">Events</NavLink>
         </li>
         <li>
-          <NavLink to="/career">Career</NavLink>
+          <NavLink to="/pages">Pages</NavLink>
         </li>
         <li>
-          <NavLink to="/login">Login</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </li>
         <li>
-          <NavLink to="/register">Registration</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </div>
     </>
@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-gray-400 rounded-md">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -65,7 +65,7 @@ const Header = () => {
               {navlinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">EventBox</a>
+          <a className="btn btn-ghost normal-case text-xl">EventLab</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navlinks}</ul>

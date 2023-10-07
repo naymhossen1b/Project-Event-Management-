@@ -4,8 +4,11 @@ import Home from "../Pages/Home";
 import Login from "../Firebase/Login";
 import Registar from "../Firebase/Registar";
 import Error from "../Components/Error/Error";
-import Privateroute from "../Firebase/Privateroute";
-import Career from "../Pages/Career";
+import Pages from "../Pages/Pages";
+import Events from "../Pages/Events";
+import Blog from "../Pages/Blog";
+import Contact from "../Pages/Contact";
+import Eventdetails from "../Components/EventCard/Eventdetails";
 
 const myRouter = createBrowserRouter([
     {
@@ -26,9 +29,25 @@ const myRouter = createBrowserRouter([
                 element: <Registar />
             },
             {
-                path: "/career",
-                element: <Privateroute> <Career /> </Privateroute>
+                path: "/pages",
+                Element:<Pages />
             },
+            {
+                path: '/events',
+                element: <Events />
+            },
+            {
+                path: '/blog',
+                element: <Blog />
+            },
+            {
+                path: '/contact',
+                element: <Contact />
+            },
+            {
+                path: '/card/:id',
+                element: <Eventdetails />
+            }
         ]
     }
 ])
