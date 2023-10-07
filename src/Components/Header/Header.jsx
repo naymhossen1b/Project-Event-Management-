@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Authprovider/Authprovider";
+import { BiSearch } from "react-icons/bi";
 
 const Header = () => {
   const { logout, user } = useContext(AuthContext);
@@ -25,9 +26,6 @@ const Header = () => {
           <NavLink to="/events">Events</NavLink>
         </li>
         <li>
-          <NavLink to="/pages">Pages</NavLink>
-        </li>
-        <li>
           <NavLink to="/blog">Blog</NavLink>
         </li>
         <li>
@@ -39,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-gray-800 text-white rounded-md">
+      <div className="navbar w-11/12 mx-auto bg-gray-800 text-white rounded-md fixed z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -65,7 +63,19 @@ const Header = () => {
               {navlinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">EventLab</a>
+          <div className="flex items-center gap-3">
+            <a className="btn btn-ghost normal-case text-red-300 text-2xl">EventLab</a>
+            <div>
+              <input
+                className="rounded-md absolute p-1 lg:px-3 border bg-black text-white"
+                type="search"
+                name="search"
+                id=""
+                placeholder="Search hear"
+              />
+              <BiSearch className="relative mt-2 ml-44" />
+            </div>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navlinks}</ul>

@@ -3,7 +3,7 @@
 const Banner = () => {
     return (
         <div>
-            <div className="carousel mt-8 rounded-md w-full h-[70vh]">
+            <div className="carousel mt-20 rounded-md w-full h-[70vh]">
   <div id="slide1" className="carousel-item relative w-full">
     <img src="https://i.ibb.co/1MN6Z6D/Alan-Walker.jpg" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
