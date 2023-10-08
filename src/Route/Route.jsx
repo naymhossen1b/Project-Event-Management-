@@ -8,6 +8,7 @@ import Events from "../Pages/Events";
 import Blog from "../Pages/Blog";
 import Contact from "../Pages/Contact";
 import Eventdetails from "../Components/EventCard/Eventdetails";
+import Privateroute from "../Firebase/Privateroute";
 
 const myRouter = createBrowserRouter([
     {
@@ -41,7 +42,7 @@ const myRouter = createBrowserRouter([
             },
             {
                 path: '/card/:id',
-                element: <Eventdetails />
+                element: <Privateroute> <Eventdetails /> </Privateroute>
             }
         ]
     }
