@@ -11,7 +11,7 @@ const Eventcard = () => {
   return (
     <div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {data.map((card) => (
+        {data.slice(0, 6).map((card) => (
           <Cards key={card.id} card={card}></Cards>
         ))}
       </div>

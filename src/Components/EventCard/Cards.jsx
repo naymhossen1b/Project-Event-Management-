@@ -8,7 +8,6 @@ const Cards = ({ card }) => {
     <div>
       <div className=" bg-gray-100 rounded-xl shadow-md hover:cursor-pointer hover:animate-pulse">
         <img className="w-full h-52 rounded-t-xl" src={image} alt="" />
-
         <div className="p-5 space-y-2">
           <h1 className="text-xl font-bold">{relevant_name}</h1>
           <h1 className="font-bold text-gray-600">{category}</h1>
