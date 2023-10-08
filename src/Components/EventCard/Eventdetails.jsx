@@ -4,7 +4,6 @@ import { Createdata } from "../Layout/Layout";
 import { TbArrowBigRightLines } from "react-icons/tb";
 import { ImPower } from "react-icons/im";
 import DetailsRight from "./DetailsRight";
-import Header from "../Header/Header";
 
 const Eventdetails = () => {
   const details = useContext(Createdata);
@@ -15,9 +14,8 @@ const Eventdetails = () => {
   //   console.log(detail);
   return (
     <div>
-      <Header />
       <div>
-        <div className="pt-8 h-[35vh] rounded-md relative bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
+        <div className="mt-10 h-[35vh] rounded-md relative bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
           <div className="absolute mt-20 md:ml-44">
             <h1 className="text-6xl font-bold text-white ">Event Details</h1>
             <div className="flex items-center">

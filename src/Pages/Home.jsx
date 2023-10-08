@@ -1,6 +1,5 @@
 import Eventcard from "../Components/EventCard/Eventcard";
 import Banner from "../Components/Header/Banner";
-import Header from "../Components/Header/Header";
 import Analycis from "./HPage/Analycis";
 import Welcome from "./HPage/Welcome";
 
@@ -8,7 +7,6 @@ const Home = () => {
   return (
     <>
       <div>
-        <Header />
         <Banner />
         <Welcome />
        <div className="space-y-2">
