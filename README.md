@@ -20,7 +20,11 @@ console.log(greetign);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>The correct answer is:
+B: ReferenceError: greetign is not defined
+
+Explain: The variable "greeting" is declared but not used, and a typo occurs when you try to assign an empty object to "greetign" JavaScript is case-sensitive, so "greetign" is treated as a different variable from "greeting."
+</i>
 
 </p>
 </details>
@@ -45,7 +49,12 @@ sum(1, "2");
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>
+The code provided attempts to add two values, but one of them is a string. JavaScript performs type coercion when using the + operator, which means it will try to convert the operands to a common data type for the operation. In this case, it will attempt to convert the number 1 to a string and then concatenate it with the string "2"
+
+So, the correct answer is:
+C: "12"
+</i>
 
 </p>
 </details>
@@ -71,7 +80,12 @@ console.log(food);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>
+The code initially create an array food with four elements and an object info with a property favoriteFood that references the first element of the food array. Then change the value of info.favoriteFood to "🍝". However, this change does not affect the food array in any way. Arrays and objects are reference types in JavaScript, but when assign a value to info.favoriteFood are changing the value of the property in the info object, not modifying the food array.
+
+So, the correct answer is:
+A: ['🍕', '🍫', '🥑', '🍔']
+</i>
 
 </p>
 </details>
@@ -96,7 +110,12 @@ console.log(sayHi());
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>
+The sayHi function will return "Hi there, undefined" because the name parameter is not provided with a value when calling the function.
+
+So, the correct answer is:
+B: Hi there, undefined
+</i>
 
 </p>
 </details>
@@ -124,7 +143,15 @@ console.log(count);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>
+The if (num) condition checks whether num is truthy. In JavaScript, numbers are truthy unless they are 0, which is considered falsy.
+
+0 is a falsy value, so it does not increment count.
+1, 2, and 3 are truthy values, so they each increment count by 1.
+
+So, the correct answer is:
+C: 3
+</i>
 
 </p>
 </details>
