@@ -37,7 +37,7 @@ const Registar = () => {
 
   return (
     <div>
-      <div className="mt-8 w-6/12 mx-auto rounded-xl p-5 bg-gray-300">
+      <div className="mt-8 md:w-6/12 mx-auto rounded-xl p-5 bg-gray-300">
         <div className="text-center">
           <h1 className="font-bold text-xl">Tell us about yourself</h1>
           <p>Let's get started. Please provide your information.</p>

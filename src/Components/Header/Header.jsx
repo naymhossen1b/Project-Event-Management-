@@ -63,11 +63,11 @@ const Header = () => {
               {navlinks}
             </ul>
           </div>
-          <div className="flex items-center gap-3">
-            <a className="btn btn-ghost normal-case text-red-300 text-2xl">EventLab</a>
-            <div>
+          <div className="flex items-center  gap-3">
+            <a className="btn btn-ghost  normal-case text-red-300 text-2xl">EventLab</a>
+            <div className="lg:flex hidden">
               <input
-                className="rounded-md absolute p-1 lg:px-3 border bg-black text-white"
+                className="rounded-md absolute p-1  lg:px-3 border bg-black text-white"
                 type="search"
                 name="search"
                 id=""
@@ -81,10 +81,16 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1">{navlinks}</ul>
         </div>
         <div className="navbar-end">
+          {user?.email ? (
+            <div>
+              <img className="w-14 mr-3 rounded-full" src={user.photoURL} alt="" />
+            </div>
+          ) : (
+            <div></div>
+          )}
           <div>
             {user ? (
               <>
-                <span>{user.auth.name}</span>
                 <button onClick={handleSignOut} className="btn bg-red-500 border-none text-white">
                   Sign Out
                 </button>
