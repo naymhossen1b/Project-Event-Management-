@@ -3,10 +3,12 @@ import { GrMapLocation } from "react-icons/gr";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiOutlineMinus } from "react-icons/ai";
+import Healmet from "../Components/Healmet/Healmet";
 
 const Contact = () => {
     return (
         <>
+        <Healmet title="Contact us" />
             <div className="text-center relative text-white mt-8 rounded-md h-[35vh] bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
                <div className="absolute mt-20 md:ml-44">
                <h1 className="text-6xl font-bold ">Contact Us</h1>

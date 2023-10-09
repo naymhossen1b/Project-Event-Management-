@@ -5,12 +5,12 @@ import Sociallogin from "./Sociallogin";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Components/Authprovider/Authprovider";
 import toast, { Toaster } from "react-hot-toast";
+import Healmet from "../Components/Healmet/Healmet";
 
 // const notify = () => toast.success('Successfully Login!')
 
 const Login = () => {
   const { userLogin } = useContext(AuthContext);
-
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -37,6 +37,7 @@ const Login = () => {
 
   return (
     <div>
+      <Healmet title="Login Now" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="mx-auto w-full p-5 rounded-tl-3xl rounded-br-3xl text-white mt-10 bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
           <div className="text-center mt-8 ">
@@ -74,7 +75,7 @@ const Login = () => {
             >
               Login
             </button>
-          </form> 
+          </form>
 
           <div className="flex items-center pt-4 space-x-1">
             <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>

@@ -1,5 +1,6 @@
 import Eventcard from "../Components/EventCard/Eventcard";
 import Banner from "../Components/Header/Banner";
+import Healmet from "../Components/Healmet/Healmet";
 import Analycis from "./HPage/Analycis";
 import Newslater from "./HPage/Newslater";
 import Welcome from "./HPage/Welcome";
@@ -8,6 +9,7 @@ const Home = () => {
   return (
     <>
       <div>
+        <Healmet title="Home" ></Healmet>
         <Banner />
         <Welcome />
         <div

@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../Components/Authprovider/Authprovider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
+import Healmet from "../Components/Healmet/Healmet";
 
 const Registar = () => {
   const [err, setErr] = useState("");
@@ -55,6 +56,7 @@ const Registar = () => {
 
   return (
     <div>
+      <Healmet title="Registration" />
       <div className="mt-8 md:w-6/12 mx-auto rounded-xl p-5 bg-[url('https://i.ibb.co/Zx3hcyF/people-celebrating-new-year-illustration-1284-11628.jpg')]">
         <div className="text-center text-white">
           <h1 className="font-bold text-xl">Tell us about yourself</h1>

@@ -4,10 +4,12 @@ import { GiTheater } from "react-icons/gi";
 import { FcFilmReel } from "react-icons/fc";
 import { BiSolidCameraMovie } from "react-icons/bi";
 import { MdOutlineTheaterComedy, MdSportsSoccer } from "react-icons/md";
+import Healmet from "../Components/Healmet/Healmet";
 
 const Blog = () => {
   return (
     <div>
+      <Healmet title="Services" />
       <div className="text-center relative text-white mt-8 rounded-md h-[25vh] md:h-[50vh] lg:h-[35vh] bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
         <div className="absolute md:mt-20 mt-10 ml-8 md:ml-44">
           <h1 className="md:text-6xl text-2xl font-bold ">What We Do</h1>

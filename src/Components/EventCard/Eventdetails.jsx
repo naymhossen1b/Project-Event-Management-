@@ -4,6 +4,7 @@ import { Createdata } from "../Layout/Layout";
 import { TbArrowBigRightLines } from "react-icons/tb";
 import { ImPower } from "react-icons/im";
 import DetailsRight from "./DetailsRight";
+import Healmet from "../Healmet/Healmet";
 
 const Eventdetails = () => {
   const details = useContext(Createdata);
@@ -14,6 +15,7 @@ const Eventdetails = () => {
   //   console.log(detail);
   return (
     <div>
+      <Healmet title="Event Details" />
       <div>
         <div className="mt-10 w-full h-[35vh] rounded-md relative bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
           <div className="absolute mt-20 md:ml-44">

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Authprovider/Authprovider";
 import { BiSearch } from "react-icons/bi";
+import { RxAvatar } from "react-icons/rx";
 
 const Header = () => {
   const { logout, user } = useContext(AuthContext);
@@ -37,7 +38,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar mx-auto bg-gray-800 text-white rounded-md "
+      <div className="navbar mx-auto bg-gray-600 text-white rounded-md "
       data-aos="flip-up"
       data-aos-offset="200"
       data-aos-delay="50"
@@ -101,7 +102,9 @@ const Header = () => {
             </div>
           </div>
           ) : (
-            <div></div>
+            <div className="avatar">
+            <RxAvatar className="text-gray-500 text-6xl mr-2" />
+          </div>
           )}
           <div>
             {user ? (
