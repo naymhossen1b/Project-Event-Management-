@@ -38,15 +38,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar mx-auto bg-gray-600 text-white rounded-md "
-      data-aos="flip-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
-      >
+      <div className="navbar mx-auto bg-gray-600 text-white rounded-md ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -73,12 +65,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="flex items-center  gap-3">
-            <img
-              className="w-24 rounded-full"
-              src="/public/EventLab-removebg-preview (1).png"
-              alt=""
-            />
-            {/* <a className="btn btn-ghost  normal-case text-red-300 text-2xl">EventLab</a> */}
+            <a className="btn btn-ghost  normal-case text-red-300 text-2xl">EventLab</a>
             <div className="lg:flex hidden">
               <input
                 className="rounded-md absolute p-1  lg:px-3 border bg-black text-white"
@@ -97,14 +84,14 @@ const Header = () => {
         <div className="navbar-end">
           {user?.email ? (
             <div className="avatar">
-            <div className="w-16 mr-4 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              <img src={user.photoURL} />
+              <div className="w-16 mr-4 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src={user.photoURL} />
+              </div>
             </div>
-          </div>
           ) : (
             <div className="avatar">
-            <RxAvatar className="text-gray-500 text-6xl mr-2" />
-          </div>
+              <RxAvatar className="text-gray-500 text-6xl mr-2" />
+            </div>
           )}
           <div>
             {user ? (
