@@ -1,6 +1,7 @@
 import Eventcard from "../Components/EventCard/Eventcard";
 import Banner from "../Components/Header/Banner";
 import Analycis from "./HPage/Analycis";
+import Newslater from "./HPage/Newslater";
 import Welcome from "./HPage/Welcome";
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
 
         <Eventcard />
         <Analycis />
+        <Newslater />
       </div>
     </>
   );

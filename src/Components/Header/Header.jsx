@@ -64,7 +64,11 @@ const Header = () => {
             </ul>
           </div>
           <div className="flex items-center  gap-3">
-            <img className="w-24 rounded-full" src="/public/EventLab-removebg-preview (1).png" alt="" />
+            <img
+              className="w-24 rounded-full"
+              src="/public/EventLab-removebg-preview (1).png"
+              alt=""
+            />
             {/* <a className="btn btn-ghost  normal-case text-red-300 text-2xl">EventLab</a> */}
             <div className="lg:flex hidden">
               <input
@@ -83,9 +87,11 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           {user?.email ? (
-            <div>
-              <img className="w-14 mr-3 rounded-full" src={user.photoURL} alt="" />
+            <div className="avatar">
+            <div className="w-16 mr-4 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <img src={user.photoURL} />
             </div>
+          </div>
           ) : (
             <div></div>
           )}

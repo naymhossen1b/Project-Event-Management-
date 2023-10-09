@@ -1,14 +1,18 @@
 import { useContext } from "react";
 import { AuthContext } from "../Components/Authprovider/Authprovider";
 import { GrGithub, GrGoogle } from "react-icons/gr";
+import { useNavigate } from "react-router-dom";
+
 
 const Sociallogin = () => {
 
     const {googleLogin} = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleSocialLogin = (media) => {
         media()
         .then(res => {
+            navigate('/')
             console.log(res)
         })
         .catch(error => {
