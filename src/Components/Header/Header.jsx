@@ -83,20 +83,20 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           {user?.email ? (
-            <div className="avatar">
-              <div className="w-16 mr-4 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+            <div className="avatar w-5 md:w-16">
+              <div className="w-16 md:mr-4 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img src={user.photoURL} />
               </div>
             </div>
           ) : (
             <div className="avatar">
-              <RxAvatar className="text-gray-500 text-6xl mr-2" />
+              <RxAvatar className="text-gray-500 text-5xl md:text-6xl mr-2" />
             </div>
           )}
           <div>
             {user ? (
               <>
-                <button onClick={handleSignOut} className="btn bg-red-500 border-none text-white">
+                <button onClick={handleSignOut} className="md:btn btn-sm hover:bg-red-400 rounded-md bg-gray-400 border-none text-white">
                   Sign Out
                 </button>
               </>
