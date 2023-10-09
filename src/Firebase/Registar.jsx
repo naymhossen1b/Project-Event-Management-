@@ -14,8 +14,7 @@ const Registar = () => {
   const [showPass, setShowPass] = useState(false);
 
   const { createUser, updateOnProfile } = useContext(AuthContext);
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   const handleRegistar = (e) => {
     e.preventDefault();
@@ -42,11 +41,10 @@ const Registar = () => {
     setSucces("");
     createUser(email, password)
       .then((res) => {
-        updateOnProfile(name, photo)
-        .then(() => {
-          toast.success('User created successfully');
-          navigate('/');
-        })
+        updateOnProfile(name, photo).then(() => {
+          toast.success("User created successfully");
+          navigate("/");
+        });
       })
       .catch((error) => {
         console.log(error);
@@ -128,7 +126,7 @@ const Registar = () => {
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
         </div>
         <div>
-          <Sociallogin  />
+          <Sociallogin />
         </div>
         <div className="mt-5 text-white">
           <p className="text-xs text-center font-bold sm:px-6">
