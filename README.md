@@ -1,3 +1,15 @@
+
+## EventLab Intaresting 5 Features
+
+- Event Listings: Event management websites provide customers with a comprehensive list of upcoming entertainment events in their area or of interest. Users can browse through concerts, festivals, sports events, theater shows, and more to find events they want to attend.
+- Ticket Booking and Purchasing: These websites often offer a seamless ticket booking and purchasing system. Customers can select their preferred seats, purchase tickets securely online, and receive e-tickets or mobile tickets for easy access to the event.
+- Event Information: Customers can access detailed information about each event, including the date, time, venue location, performers or teams involved, and a brief description. Event management websites may also provide maps and seating charts to help customers plan their visit.
+- Reviews and Ratings: Many event management websites incorporate user-generated content, such as reviews and ratings, to help customers make informed decisions about which events to attend. Customers can read feedback from others who have attended the same event.
+- Personalization and Recommendations: To enhance the customer experience, these websites often use algorithms to offer personalized event recommendations based on a user's preferences, previous attendance history, or location. This helps customers discover new events that align with their interests.
+
+
+
+
 <div align="center">
   <img height="60" src="https://edurev.gumlet.io/AllImages/original/ApplicationImages/CourseImages/944e5d47-8c55-4a89-91e5-22ab5f2798fc_CI.png">
   <h1>MCQ TEST</h1>
