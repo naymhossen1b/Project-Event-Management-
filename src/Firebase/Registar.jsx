@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import Sociallogin from "./Sociallogin";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Components/Authprovider/Authprovider";
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
 
 const Registar = () => {
   const [err, setErr] = useState("");
   const [succes, setSucces] = useState("");
-  const[showPass, setShowPass] = useState(false);
+  const [showPass, setShowPass] = useState(false);
 
   const { createUser } = useContext(AuthContext);
 
@@ -19,22 +19,30 @@ const Registar = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     if (password < 6) {
-      setErr("Password Should bt at least 6 charecter");
+      toast.error("Password must be at least 6 characters long.");
+
       return;
-    } else if(!/^(?!.*[A-Z])(?!.*[\W_]).{1,5}$/.test(password)){
-      setErr('Your password not strong')
-      return ;
+    } else if (!/[A-Z]/.test(password)) {
+      toast.error("Password must contain at least one capital letter.");
+
+      return;
+    } else if (!/[a-z]/.test(password)) {
+      toast.error("Password must contain at least one lowercase letter.");
+      return;
+    } else if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
+      toast.error("Password must contain at least one special character.");
+      return;
     }
     setErr("");
     setSucces("");
     createUser(email, password)
       .then((res) => {
         console.log(res);
-        setSucces("You Registared");
+        toast.success("Successfully Registerd!");
       })
       .catch((error) => {
         console.log(error);
-        setErr(error.message);
+        toast.error(error.message);
       });
   };
 
@@ -68,18 +76,21 @@ const Registar = () => {
               className="w-full px-4 py-3 rounded-md border-2"
             />
           </div>
-         
+
           <div className="space-y-1 relative text-sm">
             <label className="block">Password</label>
             <input
-              type={ showPass ? "text" : "password"}
+              type={showPass ? "text" : "password"}
               name="password"
               id="password"
               required
               placeholder="peovied a strong password"
               className="w-full px-4 py-3  rounded-md border-2"
             />
-            <span className="flex justify-end absolute" onClick={() => setShowPass(!showPass)}> {showPass ? <FaEyeSlash /> : <FaEye /> } </span>
+            <span className="flex justify-end absolute" onClick={() => setShowPass(!showPass)}>
+              {" "}
+              {showPass ? <FaEyeSlash /> : <FaEye />}{" "}
+            </span>
           </div>
           <button
             type="submit"
@@ -88,8 +99,11 @@ const Registar = () => {
             Sign in
           </button>
         </form>
-        {succes && <p className="font-bold text-green-500">{succes}</p>}
-        {err && <p className="text-red-700 font-bold">{err}</p>}
+
+        {/* {succes && <p className="font-bold text-green-500">{succes}</p>} */}
+
+        {/* {err && <p className="text-red-700 font-bold">{err}</p>} */}
+
         <div className="flex items-center pt-4 space-x-1">
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
           <p className="px-3 text-sm ">Join your social accounts</p>
@@ -113,6 +127,7 @@ const Registar = () => {
           </p>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

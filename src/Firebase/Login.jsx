@@ -4,7 +4,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Sociallogin from "./Sociallogin";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Components/Authprovider/Authprovider";
-// import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
+
+// const notify = () => toast.success('Successfully Login!')
 
 const Login = () => {
   const { userLogin } = useContext(AuthContext);
@@ -13,24 +15,23 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [loginErr, setLoginErr] = useState("");
-  const [succes, setSucces] = useState('');
+  const [succes, setSucces] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    setLoginErr('');
-    setSucces('');
+    setLoginErr("");
+    setSucces("");
     userLogin(email, password)
       .then((res) => {
         console.log(res);
-        navigate(location?.state ? location.state : '/');
-        setSucces('Successfully');
+        navigate(location?.state ? location.state : "/");
+        toast.success("Successfully Login!");
       })
       .catch((error) => {
         console.log(error);
-        setLoginErr(error.message);
-        // toast.error(error.message);
+        toast.error(error.message);
       });
   };
 
@@ -67,17 +68,13 @@ const Login = () => {
             </div>
 
             <button
+              // onClick={notify}
               type="submit"
               className="block w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400"
             >
               Login
             </button>
           </form>
-
-          {succes && <p className="font-bold text-green-500">{succes}</p>}
-        {loginErr && <p className="text-red-700 font-bold">{loginErr}</p>}
-
-
 
           <div className="flex items-center pt-4 space-x-1">
             <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
@@ -114,6 +111,7 @@ const Login = () => {
           </p>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };
