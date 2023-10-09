@@ -7,7 +7,15 @@ import { IoIosPeople } from "react-icons/io";
 const Analycis = () => {
     return (
         <div>
-            <div className="bg-gray-500 space-y-5 mt-32 text-white grid md:flex p-5 rounded-xl justify-evenly items-center text-center">
+            <div className="bg-gray-500 space-y-5 mt-32 text-white grid md:flex p-5 rounded-xl justify-evenly items-center text-center"
+              data-aos="flip-down"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
                  {/* first */}
                  <div className="space-y-3 ">
                     <GiPublicSpeaker className="text-7xl font-bold text-red-400" />

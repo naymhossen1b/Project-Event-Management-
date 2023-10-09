@@ -4,10 +4,26 @@ import { MdArrowRightAlt } from "react-icons/md";
 const Welcome = () => {
     return (
         <div className="grid grid-cols-1 gap-8 md:grid-cols-6 mt-20">
-            <div className="md:col-span-2 col-span-6">
+            <div className="md:col-span-2 col-span-6"
+             data-aos="flip-up"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-mirror="true"
+             data-aos-once="false"
+             data-aos-anchor-placement="top-center"
+            >
                 <img className="w-full h-[65vh] rounded-md" src="https://i.ibb.co/SxVxVqB/aw-harboureventcentre28391.jpg" alt="" />
             </div>
-            <div className="md:col-span-4  col-span-6 space-y-5">
+            <div className="md:col-span-4  col-span-6 space-y-5"
+             data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-mirror="true"
+             data-aos-once="false"
+             data-aos-anchor-placement="top-center"
+            >
                 <h1 className="font-bold text-gray-500 text-xl md:text-5xl">Welcome to <span className="text-red-400 animate-pulse">EventLab</span></h1>
                 <p className="font-bold">Making your events smarter & impactful by personalised event management.</p>
                 <p>We are thrilled to invite you to explore our dynamic and immersive entertainment event website, your gateway to a world of excitement, culture, and unforgettable moments. Whether you're a die-hard music enthusiast, a dedicated cinephile, a theater aficionado, or simply someone looking for a fantastic night out, our platform is your go-to destination for all things entertainment.</p>

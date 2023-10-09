@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer mt-14 p-10 bg-gray-700 text-white grid grid-cols-1 md:grid-cols-3">
+      <footer className="footer mt-14 p-10 bg-gray-700 text-white grid grid-cols-1 md:grid-cols-3"
+   
+      >
         <nav>
           <header className="footer-title">About Events</header>
           <a className="link link-hover font-semibold">The Events Specialists!</a>
