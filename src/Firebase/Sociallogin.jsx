@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Sociallogin = () => {
 
-    const {googleLogin} = useContext(AuthContext);
+    const {googleLogin, githubLogin} = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleSocialLogin = (media) => {
@@ -26,7 +26,7 @@ const Sociallogin = () => {
             <button onClick={() => handleSocialLogin(googleLogin)} className="btn text-white btn-outline">
             <GrGoogle /> Login With Google
           </button>
-            <button onClick={() => handleSocialLogin(googleLogin)} className="btn text-white lg:mt-0 mt-2 btn-outline">
+            <button onClick={() => handleSocialLogin(githubLogin)} className="btn text-white lg:mt-0 mt-2 btn-outline">
             <GrGithub /> Login With Github
           </button>
         </div>
