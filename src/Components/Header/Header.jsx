@@ -64,7 +64,8 @@ const Header = () => {
             </ul>
           </div>
           <div className="flex items-center  gap-3">
-            <a className="btn btn-ghost  normal-case text-red-300 text-2xl">EventLab</a>
+            <img className="w-24 rounded-full" src="/public/EventLab-removebg-preview (1).png" alt="" />
+            {/* <a className="btn btn-ghost  normal-case text-red-300 text-2xl">EventLab</a> */}
             <div className="lg:flex hidden">
               <input
                 className="rounded-md absolute p-1  lg:px-3 border bg-black text-white"

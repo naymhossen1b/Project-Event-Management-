@@ -11,8 +11,7 @@ const Banner = () => {
       >
         <div className="hero-overlay rounded-md bg-opacity-60"></div>
         <div className="hero-content  text-neutral-content">
-          <div className="max-w-md"
-          >
+          <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold"
             >
               "Elevate Your Events - Exclusive Offers Inside!"

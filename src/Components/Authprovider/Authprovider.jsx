@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from "react";
 import {
@@ -7,6 +8,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import auth from "../../Firebase/firebase.config";
 
@@ -45,6 +47,13 @@ const Authprovider = ({ children }) => {
     return signOut(auth);
   };
 
+  //update profile
+  const updateOnProfile = (name, photo) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name, photoURL: photo
+    }) 
+  }
+
 
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -56,7 +65,7 @@ const Authprovider = ({ children }) => {
     };
   }, []);
 
-  const authInfo = { user, googleLogin, createUser, userLogin, logout, loding };
+  const authInfo = { user, googleLogin, createUser, userLogin, logout, loding, updateOnProfile };
 
   return (
     <div>
