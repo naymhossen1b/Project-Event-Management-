@@ -37,7 +37,15 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar mx-auto bg-gray-800 text-white rounded-md ">
+      <div className="navbar mx-auto bg-gray-800 text-white rounded-md "
+      data-aos="flip-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

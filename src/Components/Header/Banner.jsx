@@ -1,7 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 const Banner = () => {
   return (
-    <div>
+    <div
+    data-aos="flip-down"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+    >
       <div
         className="hero mt-5 lg:h-[70vh] rounded-md"
         style={{
