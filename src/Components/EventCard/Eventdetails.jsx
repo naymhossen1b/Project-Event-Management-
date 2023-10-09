@@ -15,10 +15,10 @@ const Eventdetails = () => {
   return (
     <div>
       <div>
-        <div className="mt-10 h-[35vh] rounded-md relative bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
+        <div className="mt-10 w-full h-[35vh] rounded-md relative bg-[url('https://i.ibb.co/8mqYFFk/details.jpg')]">
           <div className="absolute mt-20 md:ml-44">
-            <h1 className="text-6xl font-bold text-white ">Event Details</h1>
-            <div className="flex items-center">
+            <h1 className="lg:text-6xl ml-8 text-2xl font-bold text-white ">Event Details</h1>
+            <div className="flex ml-8 items-center">
               <Link to="/">
                 <button className="btn btn-ghost text-white">Home</button>
               </Link>
@@ -38,7 +38,7 @@ const Eventdetails = () => {
 
               <div className="border w-8/12 mx-auto mt-5"></div>
 
-              <div className="flex justify-start mt-5 gap-10 items-center w-9/12 mx-auto ">
+              <div className="grid grid-cols-1 md:grid-cols-3 justify-start mt-5 gap-10 items-center w-9/12 mx-auto ">
                 <p className="font-bold text-xl">{detail.category}</p>
                 <div className="flex items-center gap-3">
                   <ImPower className="text-red-500" /> <p className="font-bold"> Elone Musk</p>

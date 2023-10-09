@@ -4,7 +4,7 @@ const DetailsRight = () => {
     return (
         <div>
             <div>
-                <div className="flex gap-3 bg-red-500 text-white rounded-md items-center p-3 font-semibold w-8/12  text-3xl">
+                <div className="flex gap-3 bg-red-500 text-white rounded-md items-center p-3 font-semibold w-8/12  md:text-3xl">
                     <BsFillBookmarkCheckFill />
                     <h1>Book This Event</h1>
                 </div>

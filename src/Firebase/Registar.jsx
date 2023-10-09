@@ -21,7 +21,10 @@ const Registar = () => {
     if (password < 6) {
       setErr("Password Should bt at least 6 charecter");
       return;
-    } 
+    } else if(!/^(?!.*[A-Z])(?!.*[\W_]).{1,5}$/.test(password)){
+      setErr('Your password not strong')
+      return ;
+    }
     setErr("");
     setSucces("");
     createUser(email, password)
@@ -66,7 +69,7 @@ const Registar = () => {
             />
           </div>
          
-          <div className="space-y-1 text-sm">
+          <div className="space-y-1 relative text-sm">
             <label className="block">Password</label>
             <input
               type={ showPass ? "text" : "password"}
@@ -76,7 +79,7 @@ const Registar = () => {
               placeholder="peovied a strong password"
               className="w-full px-4 py-3  rounded-md border-2"
             />
-            <span className="flex justify-end" onClick={() => setShowPass(!showPass)}> {showPass ? <FaEyeSlash /> : <FaEye /> } </span>
+            <span className="flex justify-end absolute" onClick={() => setShowPass(!showPass)}> {showPass ? <FaEyeSlash /> : <FaEye /> } </span>
           </div>
           <button
             type="submit"

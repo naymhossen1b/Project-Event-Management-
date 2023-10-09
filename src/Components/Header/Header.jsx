@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="lg:navbar w-11/12 mx-auto bg-gray-800 text-white rounded-md ">
+      <div className="navbar mx-auto bg-gray-800 text-white rounded-md ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -58,7 +58,7 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu w-72 bg-gray-500 menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box"
             >
               {navlinks}
             </ul>

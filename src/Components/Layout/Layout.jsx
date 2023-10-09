@@ -9,7 +9,7 @@ const Layout = () => {
   const [event, setEvent] = useState({});
 
   useEffect(() => {
-    fetch("events.json")
+    fetch("/events.json")
       .then((res) => res.json())
       .then((data) => setEvent(data))
       .catch((error) => {

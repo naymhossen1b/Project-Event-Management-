@@ -73,7 +73,7 @@ const Contact = () => {
                     <button className="btn font-bold w-full bg-red-500 mt-20 text-white hover:animate-bounce">send comment</button>
                 </div>
                 {/* map */}
-                <div className="bg-green-300 mt-20 rounded-xl">
+                <div className="bg-[url('https://i.ibb.co/pL4J94F/maps.png')] mt-20 rounded-xl">
 
                 </div>
             </div>

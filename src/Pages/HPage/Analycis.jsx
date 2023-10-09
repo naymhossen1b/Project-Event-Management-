@@ -7,9 +7,9 @@ import { IoIosPeople } from "react-icons/io";
 const Analycis = () => {
     return (
         <div>
-            <div className="bg-gray-500 mt-32 text-white grid md:flex p-5 rounded-xl justify-evenly items-center text-center">
-                {/* first */}
-                <div className="space-y-3">
+            <div className="bg-gray-500 space-y-5 mt-32 text-white grid md:flex p-5 rounded-xl justify-evenly items-center text-center">
+                 {/* first */}
+                 <div className="space-y-3 ">
                     <GiPublicSpeaker className="text-7xl font-bold text-red-400" />
                 <div className="stat-value">2K+</div>
                     <p className="font-bold">Best Speaker</p>
